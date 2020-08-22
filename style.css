@@ -65,15 +65,22 @@ header{
 
 h1{
     font-weight: bold;
-    font-size: 2.9rem;
+    font-size: 280%;
     text-shadow: 3px 3px 0px rgba(26, 25, 25, 0.5);
     color: var(--body-bg-color);
 }
 .welcome-txt p{
-    font-size: 1.5rem;
+    font-size: 150%;
     color: var(--body-primary-txt-color);
     font-weight: 400;
     padding-top: 10px;
+}
+#bio{
+    height: 50vh;
+}
+.bio-paragraph{
+    width: 60%;
+    margin: auto;
 }
 @media only screen and (max-width: 780px){
     .welcome-txt{
@@ -81,12 +88,16 @@ h1{
         left: 50px;
     }
     h1{
-        font-size: 2.2rem;
+        font-size: 240%;
         
     }
     .welcome-txt p{
-        font-size: 1.3rem;
+        font-size: 120%;
         
+    }
+    .bio-paragraph{
+        width: 80%;
+        margin: auto;
     }
 }
 .skills{
@@ -99,13 +110,7 @@ h1{
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 2.5em;
 }
-#bio{
-    height: 80vh;
-}
-.bio-paragraph{
-    width: 60%;
-    margin: auto;
-}
+
 .titles{
     font-size: 2.5rem;
     background-image: url("one.jpg");
