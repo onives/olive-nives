@@ -6,7 +6,8 @@
     --dark-bg-color: black;
     --btn-txt-color: white;
     --body-primary-txt-color: rgb(14, 14, 48); 
-    --grid-bg-color: #f0ecdd;
+    --grid-bg-color: rgb(248, 246, 246);
+    --highlight-txt-color: rgb(36, 145, 121);
 }
 
 body{
@@ -16,15 +17,13 @@ body{
     
 }
 .nav-link{
-    font-size: 20px;
-    color: var(--body-primary-txt-color) !important;
-}
-.name{
-    font-size: 30px !important;
-    text-shadow: 2px 2px 0px rgba(26, 25, 25, 0.5);
+    font-size: 18px;
     color: var(--body-bg-color) !important;
 }
-
+.navbar-dark{
+    /* background-color: rgb(1, 1, 20); */
+    height: 14vh;
+}
 .active{
     background-image: url("one.jpg");
     background-clip: border-box;
@@ -46,7 +45,7 @@ body{
     text-shadow: 2px 2px 0px rgba(26, 25, 25, 0.5);
 }
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("slice.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("blue2.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,23 +56,39 @@ header{
 
 .welcome-txt{
     position: absolute;
-    top: 48vh;
-    left: 25vw;
+    top: 45vh;
     color: var(--btn-txt-color);
    
 }
-
+.intro-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+}
 h1{
     font-weight: bold;
     font-size: 280%;
     text-shadow: 3px 3px 0px rgba(26, 25, 25, 0.5);
     color: var(--body-bg-color);
+    line-height: 1.5em;
+    word-spacing: 0.4em;
+    
 }
 .welcome-txt p{
     font-size: 150%;
-    color: var(--body-primary-txt-color);
+    color: var(--body-bg-color);
     font-weight: 400;
     padding-top: 10px;
+    word-spacing: 0.4em;
+}
+.hii{
+    border: 1px solid goldenrod;
+    padding: 2px 9px;
+}
+.nives{
+    border: 1px solid var(--highlight-txt-color);
+    padding: 2px 9px;
 }
 #bio{
     height: 50vh;
@@ -81,11 +96,11 @@ h1{
 .bio-paragraph{
     width: 60%;
     margin: auto;
+    word-spacing: 0.4em;
 }
 @media only screen and (max-width: 780px){
     .welcome-txt{
-        top: 230px;
-        left: 50px;
+        top: 190px;
     }
     h1{
         font-size: 240%;
@@ -96,12 +111,12 @@ h1{
         
     }
     .bio-paragraph{
-        width: 80%;
+        width: 98%;
         margin: auto;
     }
 }
 .skills{
-    color: var(--body-bg-color);
+    color: var(--highlight-txt-color);
 }
 
 .grids{
@@ -179,23 +194,21 @@ h1{
     background-color: var(--grid-bg-color);
     border-color: var(--body-bg-color);
     box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
+    /* border-radius: 10px; */
 }
 .grid2-heading{
-    text-align: center;
     margin-top: 7px;
+    padding: 2px 16px;
 }
 .grid2-paragraph{
-    padding: 2px 10px;
+    padding: 2px 13px;
     margin-left: 6px;
 }
 .grid3-img{
     height:auto;
     border-radius: 50%;
 }
-.blog{
-    border: 1px solid var(--grid-bg-color);
-}
+
 .grid3-btn{
     padding: 6px 18px;
     margin-bottom: 30px;
