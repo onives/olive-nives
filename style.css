@@ -1,24 +1,25 @@
 
 :root{
-    --body-bg-color: #f2eee5;
+    /* --main-bg-color: #f2eee5; */
+    --main-bg-color: rgb(248, 246, 246);
     --body-font: 18px;
     --body-txt-color: black;
     --dark-bg-color: black;
     --btn-txt-color: white;
     --body-primary-txt-color: rgb(14, 14, 48); 
-    --grid-bg-color: rgb(248, 246, 246);
+    /* --grid-bg-color: rgb(248, 246, 246); */
     --highlight-txt-color: rgb(36, 145, 121);
 }
 
 body{
-    background-color: var(--body-bg-color);
+    background-color: var(--main-bg-color);
     color: var(--body-primary-txt-color);
     font-family: 'Quicksand', sans-serif;
     
 }
 .nav-link{
     font-size: 18px;
-    color: var(--body-bg-color) !important;
+    color: var(--main-bg-color) !important;
 }
 
 .active{
@@ -68,9 +69,9 @@ h1{
     font-weight: bold;
     font-size: 280%;
     text-shadow: 3px 3px 0px rgba(26, 25, 25, 0.5);
-    color: var(--body-bg-color);
+    color: var(--main-bg-color);
     line-height: 1.5em;
-    word-spacing: 0.4em;
+    word-spacing: 0.5em;
     
 }
 .welcome-txt p{
@@ -79,6 +80,7 @@ h1{
     font-weight: 400;
     padding-top: 10px;
     word-spacing: 0.4em;
+    /* line-height: 2em; */
 }
 .hii{
     border: 1px solid goldenrod;
@@ -123,7 +125,37 @@ h1{
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 2.5em;
 }
-
+.project{
+    height: 200px;
+    transition:0.3s ease-in-out;
+    background-color: var(--main-bg-color);
+    border-color: var(--main-bg-color);
+    box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.grid2-img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.grids .project .content{
+    position:relative;
+    visibility:hidden;
+    opacity:0;
+    transition:0.2s ease-in-out;
+}
+.grids .project:hover{
+    height: auto;
+}
+.grids .project:hover .content{
+    visibility:visible;
+    opacity:1;
+    margin-top: 20px;
+    transition-delay:0.2s;
+}
+.grids .project:hover img{
+    clip-path: polygon(100% 0, 100% 74%, 50% 100%, 0 74%, 0 0);
+}
 .titles{
     font-size: 2.5rem;
     background-image: url("one.jpg");
@@ -149,7 +181,7 @@ h1{
 }
 .all{
     text-align: center;
-    color: var(--body-bg-color);
+    color: var(--main-bg-color);
 }
 .all h3{
     font-size: 2rem;
@@ -163,13 +195,9 @@ h1{
     -webkit-background-clip: border-box;
     text-align: center;
     color: var(--btn-txt-color);
-    border: 1px solid var(--body-bg-color); 
+    border: 1px solid var(--main-bg-color); 
 }
-.grid2-img{
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
+
 .grid2-btn{
     padding: 5px 15px;
     margin-bottom: 30px;
@@ -177,7 +205,7 @@ h1{
     margin-right: 15px;
     border-radius: 15px;
     width: 40%;
-    border: 1px solid var(--grid-bg-color);
+    border: 1px solid var(--main-bg-color);
     box-shadow: 2px 2px 5px rgba(26, 25, 25, 0.5);
 }
 .grid2-btn:hover{
@@ -186,15 +214,10 @@ h1{
     -webkit-background-clip: border-box;
     text-align: center;
     color: var(--btn-txt-color);
-    border: 1px solid var(--body-bg-color); 
-}
-.project{
-    background-color: var(--grid-bg-color);
-    border-color: var(--body-bg-color);
-    box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.5);
-    /* border-radius: 10px; */
+    border: 1px solid var(--main-bg-color); 
 }
 .grid2-heading{
+    text-align: center;
     margin-top: 7px;
     padding: 2px 16px;
 }
@@ -211,7 +234,7 @@ h1{
     padding: 6px 18px;
     margin-bottom: 30px;
     border-radius: 10px;
-    border: 1px solid var(--grid-bg-color);
+    border: 1px solid var(--main-bg-color);
     box-shadow: 2px 2px 5px rgba(26, 25, 25, 0.5);
 }
 .grid3-btn:hover{
@@ -220,7 +243,7 @@ h1{
     -webkit-background-clip: border-box;
     text-align: center;
     color: var(--btn-txt-color);
-    border: 1px solid var(--body-bg-color); 
+    border: 1px solid var(--main-bg-color); 
 }
 .grid3-heading{
     padding: 5px 2px;
