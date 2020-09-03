@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
 
     </head>
     <body>
@@ -16,8 +16,13 @@
             <nav class="navbar navbar-expand-md navbar-dark fixed-top">
                 <div class="container">
                     <!-- Brand -->
-                    <a class="navbar-brand" href="#"><img src="pp.JPG" alt="pic" style="width: 70px; border-radius: 50%;"></a>
-                      
+                    <a class="navbar-brand" href="#">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </a>
+                    <!-- <a class="navbar-brand" href="#"><img src="pp.JPG" alt="pic" style="width: 70px; border-radius: 50%;"></a> -->
                     <!-- Toggler/collapsibe Button -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
@@ -27,39 +32,35 @@
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">HOME</a>
+                                <a class="nav-link active" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#biography">BIO</a>
+                                <a class="nav-link" href="#biography">Bio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#projects">PROJECTS</a>
+                                <a class="nav-link" href="#projects">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#blogs">BLOGS</a>
+                                <a class="nav-link" href="#blogs">Blogs</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">CONTACT</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </diV>
             </nav>
                 <div class="welcome-txt">
-                    <div class="container intro-grid">
-                        <div>
-                            <h1><span class="hii">Hi,</span> I am<br>Olive <span class="nives">Nives</span></h1>
-                        </div>
-                        <div>
-                            <p id="typedtext"></p>
-                        </div>
+                    <div class="container">
+                        <h1 class="container">Olive Nives</h1>
+                        <p class="container" id="typedtext"></p>
                     </div>
                 </div>
         </header>
         <div style="height: 150px;"></div>
         <div class="container">
-            <h2 id="biography" class="titles">ABOUT</h2>
-            <div style="height: 80px;"></div>
+            <h2 id="biography" class="titles">SHORT BIO</h2> 
+            <div style="height: 50px;"></div>
             <div id="bio">
                 <div class="bio-paragraph">
                     <p>I am a <em>Front-end developer</em> and <em>blogger.</em>
@@ -68,6 +69,7 @@
                     </p>
                 </div>
             </div>
+            <div style="height: 100px;"></div>
             <h2 id="projects" class="titles">PROJECTS</h2>
             <div style="height: 70px;"></div>
             <div class="grids">
@@ -97,8 +99,7 @@
                     <img class="grid2-img" src="me4.JPG" alt="">
                     <div class="content">
                         <h4 class="grid2-heading">Todo App</h4>
-                        <p class="grid2-paragraph">Built in <em>HTML CSS JavaScript Node.js.</em><br><br>
-                        It got me fully comfortable styling websites using plain CSS</p>  
+                        <p class="grid2-paragraph">Built in <em>HTML CSS JavaScript Node.js.</em></p>  
                         <a href="#" target="_blank"><button class="grid2-btn">Github Code</button></a>
 						<a href="#" target="_blank"><button class="grid2-btn">Visit Site</button></a>
                     </div>
@@ -112,7 +113,7 @@
                         <a href="#" target="_blank"><button class="grid2-btn">Github Code</button></a>
 						<a href="#" target="_blank"><button class="grid2-btn">Visit Site</button></a>
                     </div>
-                 </div>
+                </div>
             </div>
             <div style="height: 80px;"></div>
             <h2 id="blogs" class="titles">BLOGS</h2>
@@ -159,24 +160,24 @@
             <div style="height: 90px;"></div>
             <div class="hire-notification">
                 <div class="container">
-                    <div style="height: 160px;"></div>
+                    <div style="height: 158px;"></div>
                     <div class="all">
-                    <h3>I'm Available for Freelancing and full-time employment.<br>Satisfaction guaranteed!</h3>
-                    <button class="main-btn"><a href="mailto:olivenivesk@yahoo.com?subject=Mail from Website">Hire Me</a></button>
+                        <h3>I'm Available for Freelance and Full-time work.<br>Satisfaction guaranteed!</h3>
+                        <button class="main-btn"><a href="mailto:olivenivesk@yahoo.com?subject=Mail from Website">Hire Me</a></button>
                     </div>
                 </div>
             </div>
         <div class="container">
             <div style="height: 50px;"></div>
             <h2 id="contact" class="titles">GET IN TOUCH</h2>
-            <P class="get-in-touch">Are you in need of a website that gets results? You have come to the right person. I've got you covered</P>
+            <P class="get-in-touch">Are you in need of a website that gets results? You have come to the right person.</P>
             <div style="height: 50px;"></div>
             <div class="grids">
                 <div>
                     <h4>Lets talk about projects</h4>
-                    <p> I love working on life changing projects. No project is too small or too big for me. I enjoy working with a wonderful team of people and
-                        learning consistently. <br><br>
-                        C'mon don't hesitate, hit me up and lets change this world together! 
+                    <p> I work on both Small and Big projects with equal enthusiasm. I love working as part of a team, but not limited to that, I also possess the
+                        ability to develop and build amazing sites<br><br>
+                        C'mon don't hesitate, hit me up and lets create something great! 
                         </p>
                     <ul class="social-media">
                         <li>Kampala, Uganda</li><li>+256700171844</li><li>olivenivesk@yahoo.com</li>
@@ -201,15 +202,17 @@
                     </form>
                 </div>
             </div>
+        </div>
             <div style="height: 50px;"></div>
             <footer>
                 <div class="row text-center">
                     <div class="col-sm-12">
+                        <div style="height: 12px;"></div>
                         <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
                     </div>
                 </div>
             </footer>
-        </div>
+        <!-- </div> -->
         <script src="portfolio.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
