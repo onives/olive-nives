@@ -1,7 +1,7 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
-    "I want to develop things that MAKE people's lives SIMPLE", 
-    "(Html | Css | Bootstrap | javaScript | Git & Github | React.js | Node.js | MongoDB)"
+    "{ I'm a web developer }",
+    "I love creating things that MAKE people's lives SIMPLE" 
     );
     var iSpeed = 100; // time delay of print out
     var iIndex = 0; // start printing array at this posision
