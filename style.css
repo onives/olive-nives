@@ -149,16 +149,13 @@ h1{
 @media only screen and (max-width: 780px){
     .welcome-txt{
         width: 98%;
+        top: 56%;
         margin: auto;
     }
     h1{
         font-size: 300%;
         
     }
-    /* .welcome-txt p{
-        font-size: 120%;
-        
-    } */
     .bio-paragraph{
         width: 98%;
         margin: auto;
