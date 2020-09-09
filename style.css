@@ -107,16 +107,18 @@ header{
     align-items: center;
     text-align: left;
     position: absolute;
-    left: 45%;
+    left: 43%;
     top: 60%;
     transform: translate(-50%, -50%);
     margin: auto;
     color: var(--main-txt-color);
    
 }
-
+.highlight{
+    font-size: 150%;
+   
+}
 h1{
-    /* font-size: 4rem; */
     font-size: 430%;
     background-image: url("one.jpg");
     background-clip: text;
@@ -135,6 +137,7 @@ h1{
     color: var(--body-txt-color);
     padding-top: 10px;
 }
+
 #bio{
     height: 50vh;
 }
