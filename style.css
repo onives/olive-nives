@@ -105,9 +105,9 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: center;
     position: absolute;
-    left: 43%;
+    left: 50%;
     top: 60%;
     transform: translate(-50%, -50%);
     margin: auto;
@@ -148,8 +148,7 @@ h1{
 }
 @media only screen and (max-width: 780px){
     .welcome-txt{
-        width: 95%;
-        text-align: center;
+        width: 98%;
         margin: auto;
     }
     h1{
