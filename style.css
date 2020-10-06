@@ -1,19 +1,23 @@
 
 :root{
     --main-bg-color: #F7E8EC;
-    --main-txt-color: #2F2A2F;
+    --main-txt-color: #442946;
+    /* --main-txt-color: #2F2A2F; */
+    --footer-bg-color: #2F2A2F;
     --body-font: 20px;
     --btn-txt-color: white;
     --grid-bg-color: rgb(248, 246, 246);
     --highlight-txt-color: rgb(36, 145, 121);
     --main-grid-bg-color: #f8f1f3;
+    --txt-deco-color:  #8e44ad;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--main-bg-color);
-    color: var(--body-primary-txt-color);
+    color: var(--main-txt-color);
     font-family: 'Quicksand', sans-serif;
-    
 }
 .switch {
     position: relative;
@@ -95,41 +99,55 @@ body{
     color: var(--btn-txt-color) !important;
     text-shadow: 2px 2px 0px rgba(26, 25, 25, 0.5);
 }
-header{
+.hero{
     position: relative;
     width: 100%;
-    height: 98vh;
 }
-
-.welcome-txt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
+.squiggle{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--txt-deco-color);
+}
+.icon-div{
+    position: relative;
+    width: 50%;
     margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -1px;
+    
+}
+.my-icon{
+    width: 100%;
+    height: auto;
+}
+.welcome-txt{
+    margin: 0 auto 60px;
+    color: inherit;
+    max-width: 950px;
+    width: 90%;
+    text-align: center; 
+    margin-top: 200px;
     color: var(--main-txt-color);
    
 }
 .highlight{
     font-size: 150%;
-   
+    margin: 15px auto;
+    width: 85%;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
 }
 h1{
-    font-size: 430%;
-    background-image: url("one.jpg");
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Changa', sans-serif;
-    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    line-height: 1.5;
     word-spacing: 0.2em;
     letter-spacing: 0.6px;
-    font-weight: 900;
-    
+    -webkit-animation: .5s enterUp ease-in-out forwards;
+    animation: .5s enterUp ease-in-out forwards;
 }
 .welcome-txt p{
     font-size: 130%;
@@ -148,18 +166,28 @@ h1{
     font-size: 20px;
 }
 @media only screen and (max-width: 780px){
+    .icon-div{
+        width: 80%;
+    }
     .welcome-txt{
+        max-width: 550px;
+        text-align: center;
+        margin: 0 auto 75px;
         width: 98%;
-        top: 56%;
-        margin: auto;
+        /* top: 56%; */
     }
     h1{
-        font-size: 300%;
+        font-size: 35px;
         
     }
     .bio-paragraph{
         width: 98%;
         margin: auto;
+    }
+    .hero{
+        margin: 190px 20px 0;
+        background: 0 0;
+        background-size: cover;
     }
 }
 
@@ -173,7 +201,7 @@ h1{
     background-color: var(--grid-bg-color);
     border-color: var(--main-bg-color);
     box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
+    border-radius: 5px;
 }
 .grid2-img{
     width: 100%;
@@ -206,7 +234,7 @@ h1{
 }
 .social-media ul li{
     display: inline-block;
-    padding: 5px 5px;
+    padding: 5px 15px;
 }
 .all{
     text-align: center;
@@ -285,6 +313,6 @@ h1{
 }
 footer{
     height: 10vh;
-    background-color: var(--main-txt-color);
+    background-color: var(--footer-bg-color);
     color: var(--btn-txt-color);
 }
