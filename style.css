@@ -12,9 +12,10 @@
 }
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 body{
+    overflow-x: hidden;
     background-color: var(--main-bg-color);
     color: var(--main-txt-color);
     font-family: 'Quicksand', sans-serif;
@@ -101,7 +102,7 @@ body{
 }
 .hero{
     position: relative;
-    /* width: 100%; */
+    width: 95%;
 }
 .squiggle{
     text-decoration: underline;
@@ -148,6 +149,7 @@ h1{
     letter-spacing: 0.6px;
     -webkit-animation: .5s enterUp ease-in-out forwards;
     animation: .5s enterUp ease-in-out forwards;
+    width: 90%;
 }
 .welcome-txt p{
     font-size: 130%;
@@ -178,6 +180,7 @@ h1{
     }
     h1{
         font-size: 35px;
+        width: auto;
         
     }
     .bio-paragraph{
