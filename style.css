@@ -350,7 +350,7 @@ h1{
     color: var(--form-txt-color);
     border: none;
 }
-.blogs-box, .contact-box, .hire-notification, .bio-box, footer{
+.blogs-box, .contact-box, .project-box, .hire-notification, .bio-box, footer{
     margin-top: 100px;
 }
 footer{
