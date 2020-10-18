@@ -56,3 +56,7 @@ window.onload = function() {
 };
 
 
+// window.addEventListener("resize", function(){
+//   if (window.innerWidth < 500) 
+//   resize.classList.remove("hover-on");
+// })
