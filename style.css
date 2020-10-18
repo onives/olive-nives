@@ -220,6 +220,10 @@ h1{
         background: 0 0;
         background-size: cover;
     }
+    .grids{
+        width 90%;
+        margin: auto;
+    }
 }
 
 .grids{
