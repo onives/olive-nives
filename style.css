@@ -38,7 +38,6 @@ body{
     --main-grid-bg-color: #f8f1f3;
     --txt-deco-color:  #8e44ad;
     --box-shadow-color: rgb(15, 15, 15);
-    /* --btn-bg-color: #2F2A2F; */
     --btn-bg-color: #ffbd39;
     --form-bg-color: #2F2A2F;
     --form-text-color: #eaeaea;
@@ -104,10 +103,11 @@ body{
     border-radius: 50%;
 }
 .navbar{
-    background-color: var(--main-bg-color);
-    border-color: var(--main-bg-color);
+    background: inherit;
+    border: none;
     box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.5); 
 }
+
 .nav-link{
     font-size: 18px;
     color: var(--main-txt-color) !important;
@@ -220,6 +220,10 @@ h1{
         background: 0 0;
         background-size: cover;
     }
+    .grids{
+        width: 90%;
+        margin: auto;
+    }
 }
 
 .grids{
@@ -228,11 +232,24 @@ h1{
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 2.5em;
 }
+.blog{
+    transition: transform .3s;
+}
 .project{
     background-color: var(--grid-bg-color);
     border-color: var(--main-bg-color);
     box-shadow: 2px 2px 6px 1px var(--box-shadow-color);
     border-radius: 5px;
+    transition: transform .3s;
+}
+
+.project:hover, .blog:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+}
+.project:hover{
+    border-bottom: 2px solid var(--main-txt-color);
+    background-color: white; 
 }
 .grid2-img{
     width: 100%;
