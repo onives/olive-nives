@@ -13,6 +13,7 @@
     --btn-bg-color:  rgb(248, 246, 246);
     --form-bg-color: white;
     --form-text-color: #442946;
+    --div-hover-color: white;
 }
 /* removes the horizontal scroll issue on larger screen but not mobile version */
 *{
@@ -41,6 +42,7 @@ body{
     --btn-bg-color: #ffbd39;
     --form-bg-color: #2F2A2F;
     --form-text-color: #eaeaea;
+    --div-hover-color:#5c5b5b;
     
 }
 .switch {
@@ -220,10 +222,6 @@ h1{
         background: 0 0;
         background-size: cover;
     }
-    .grids{
-        width: 80%;
-        margin: auto;
-    }
 }
 
 .grids{
@@ -239,16 +237,20 @@ h1{
     border-radius: 5px;
     
 }
-/* .hover-on{
+
+.hover-on{
     transition: transform .3s;
+    /* opacity: 0.8; */
 }
 .hover-on:hover{
-    transform: scale(1.1);
+    /* opacity: 1;
+    transform: scale(1.1); */
     box-shadow: none;
-} */
+    
+}
 .project:hover{
     border-bottom: 2px solid var(--main-txt-color);
-    background-color: white; 
+    background-color: var(--div-hover-color); 
 }
 .grid2-img{
     width: 100%;
