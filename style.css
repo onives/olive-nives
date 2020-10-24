@@ -155,11 +155,12 @@ body{
 .welcome-txt{
     margin: 0 auto 60px;
     color: inherit;
-    max-width: 950px;
+    max-width: 900px;
     width: 90%;
     text-align: center; 
     margin-top: 200px;
     color: var(--main-txt-color);
+    margin-right: 4rem;
    
 }
 .highlight{
@@ -254,7 +255,7 @@ h1{
 }
 .grid2-img{
     width: 100%;
-    height: auto;
+    height: 180px;
     border-radius: 3px;
 }
 .titles{
@@ -298,6 +299,7 @@ h1{
 }
 .all h3{
     font-size: 2rem;
+    margin-bottom: 2rem;
 }
 .main-btn{
     border-radius: 15px;
@@ -338,7 +340,7 @@ h1{
     margin-left: 6px;
 }
 .grid3-img{
-    height:auto;
+    height: 130px;
     border-radius: 50%;
 }
 
