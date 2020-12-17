@@ -192,10 +192,6 @@ h1{
     color: var(--body-txt-color);
     padding-top: 10px;
 }
-
-#bio{
-    height: 50vh;
-}
 .bio-paragraph{
     width: 70%;
     margin: auto;
