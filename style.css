@@ -130,6 +130,10 @@ body{
 #toggle-notice{
     color: var(--main-txt-color) !important;
 }
+.navbar-toggler, .navbar-toggler-icon{
+    color: var(--main-bg-color);
+    background-color: var(--main-txt-color);
+  }
 .hero{
     position: relative;
    
